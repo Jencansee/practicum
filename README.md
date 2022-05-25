@@ -4,7 +4,7 @@
 
 [Клик чтобы перейти на продакшн](https://practicum.vercel.app/docs/practicum/)
 
-## Ссылки
+## Ссылки при разработке
 - http://localhost:3000/docs/ : открыть вебсайт
 - http://localhost:3000/admin : администраторская панель 
 - http://localhost:3000/exit-admin : выйти из админ. панил
