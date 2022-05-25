@@ -7,5 +7,5 @@
 ## Ссылки при разработке
 - http://localhost:3000/docs/ : открыть вебсайт
 - http://localhost:3000/admin : администраторская панель 
-- http://localhost:3000/exit-admin : выйти из админ. панил
+- http://localhost:3000/exit-admin : выйти из администраторской панели
 - http://localhost:4001/altair/ : платформа для теста GraphQL API контента
