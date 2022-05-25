@@ -9,6 +9,7 @@ import Callout from "../../blocks/callout-block";
 import ReactPlayer from "react-player/lazy";
 import Page404 from "../404.js";
 import { useTina } from "tinacms/dist/edit-state";
+import VideoContainer from "../../components/VideoContainer";
 
 const query = gql`
   query DocumentQuery($relativePath: String!) {
@@ -51,7 +52,9 @@ const components = {
     return <FeaturesBlock features={props.featureList} />;
   },
   VideoPlayer: (props) => {
-    return <ReactPlayer controls={true} playbackRate={5} autoPlay={true} muted={true} url={props.url} />;
+    return <VideoContainer>
+			<ReactPlayer width="100%" height="100%" controls={true} playbackRate={5} autoPlay={true} muted={true} url={props.url} />
+		</VideoContainer>;
   },
 };
 

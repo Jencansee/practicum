@@ -62,9 +62,9 @@ const textColor = {
 }
 
 const lightTextColor = {
-	warning: "rgba(254,252,252,1)",
-	error: "rgba(254,252,252,1)",
-	default: "rgba(254,252,252,1)",
+	warning: "rgba(0,0,0,1)",
+	error: "rgba(0,0,0,1)",
+	default: "rgba(0,0,0,1)",
 	note: "rgba(254,252,252,1)"
 }
 
