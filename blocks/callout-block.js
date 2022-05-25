@@ -1,5 +1,4 @@
 import { useColorMode } from '@xstyled/styled-components';
-import { useEffect } from 'react';
 import styled from 'styled-components';
 import rem from "../utils/rem";
 
@@ -71,9 +70,10 @@ const lightTextColor = {
 
 export default function Callout({callout}) {
 	const [mode] = useColorMode();
-return(
-  <CalloutWrapper type={backgroundColor[callout.type]} >
-		{callout.label && <CalloutLabel textColor={mode === 'dark' ? lightTextColor[callout.type] : textColor[callout.type]}>{callout.label}</CalloutLabel>}
-    <CalloutText textColor={mode === 'dark' ? lightTextColor[callout.type] : textColor[callout.type] || textColor.default}>{callout?.text}</CalloutText>
-  </CalloutWrapper>
-)}
+	return(
+	  <CalloutWrapper type={backgroundColor[callout.type]} >
+			{callout.label && <CalloutLabel textColor={mode === 'dark' ? lightTextColor[callout.type] : textColor[callout.type]}>{callout.label}</CalloutLabel>}
+	    <CalloutText textColor={mode === 'dark' ? lightTextColor[callout.type] : textColor[callout.type] || textColor.default}>{callout?.text}</CalloutText>
+	  </CalloutWrapper>
+	)
+}

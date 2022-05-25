@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styled, { x, down, css } from '@xstyled/styled-components'
+import styled, { useColorMode, x, down, css } from '@xstyled/styled-components'
 import { ScreenContainer } from './ScreenContainer'
 import { NavLink } from './Nav'
 import { AppNav } from './AppNav'
@@ -52,6 +52,8 @@ const NavSkipLink = styled.a`
 
 export function AppHeader() {
   const logo = '/images/log.svg'
+	const [mode] = useColorMode();
+	const isDarkInt = `invert(${ +(mode === 'dark') })`;
 
   return (
     <OuterHeader>
@@ -73,6 +75,7 @@ export function AppHeader() {
                   height={32}
                   src={logo}
                   alt={siteMetadata.title}
+									style={{ 'filter': isDarkInt }}
                 />
               ) : (
                 <x.h2
