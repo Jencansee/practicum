@@ -56,9 +56,6 @@ export function AppHeader() {
   return (
     <OuterHeader>
       <ScreenContainer>
-        <NavSkipLink tabindex="0" href="#main">
-          Skip to content
-        </NavSkipLink>
         <x.div row alignItems="center" flexWrap="nowrap" mx={-2}>
           <x.div col px={2} display="flex">
             <NavLink
