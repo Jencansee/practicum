@@ -34,3 +34,5 @@ yarn-error.log*
 .vercel
 .env
 .tina/__generated__
+package-lock.json
+package-lock.json
