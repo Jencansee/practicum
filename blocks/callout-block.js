@@ -1,5 +1,4 @@
-import { useColorMode } from '@xstyled/styled-components';
-import styled from 'styled-components';
+import { useColorMod, styled } from '@xstyled/styled-components';
 import rem from "../utils/rem";
 
 export const SubHeader = styled.h3`
