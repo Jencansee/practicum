@@ -68,7 +68,7 @@ const lightTextColor = {
 }
 
 export default function Callout({callout}) {
-	const [mode] = useColorMode;
+	const [mode] = useColorMode();
 	return(
 	  <CalloutWrapper type={backgroundColor[callout.type]} >
 			{callout.label && <CalloutLabel textColor={mode === 'dark' ? lightTextColor[callout.type] : textColor[callout.type]}>{callout.label}</CalloutLabel>}
