@@ -1,4 +1,4 @@
-import { useColorMod, styled } from '@xstyled/styled-components';
+import { useColorMode, styled } from '@xstyled/styled-components';
 import rem from "../utils/rem";
 
 export const SubHeader = styled.h3`
@@ -68,7 +68,7 @@ const lightTextColor = {
 }
 
 export default function Callout({callout}) {
-	const [mode] = useColorMode();
+	const [mode] = useColorMode;
 	return(
 	  <CalloutWrapper type={backgroundColor[callout.type]} >
 			{callout.label && <CalloutLabel textColor={mode === 'dark' ? lightTextColor[callout.type] : textColor[callout.type]}>{callout.label}</CalloutLabel>}
