@@ -3,12 +3,12 @@ module.exports = {
     return [
       {
         source: '/',
-        destination: '/docs/practicum',
+        destination: '/docs/start',
         permanent: false,
       },
       {
         source: '/docs/',
-        destination: '/docs/practicum',
+        destination: '/docs/start',
         permanent: false,
       },
     ]
